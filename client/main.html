@@ -1,0 +1,102 @@
+<head>
+  <title>planitweb</title>
+  
+</head>
+
+<body> 
+
+  {{> navbar}}
+
+  {{> header}}
+ 
+  {{> whyplanit}}
+
+<hr>
+
+{{> whyplanit}}
+<!--
+  {{> hello}}
+  {{> info}}
+  -->
+
+</body>
+
+<template name="whyplanit">
+  <div class=container-fluid>
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Why Planit?</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      
+    <div id="items-left" style="visibility: visible; animation-name: fadeIn;">
+      <span class="icon">
+        <img src="/images/Night_Owl_300.png" height="100px" />
+      </span>
+      <h3>Ship more with less code</h3>
+      <span>Accomplish in 10 lines what would otherwise take 1000, thanks to an integrated JavaScript stack that extends from the database to the end user's screen.</span>
+    </div>
+
+    </div>
+    <div class="col-sm-4">
+      
+      <div id="items-center" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+        <img src="/images/Early_Bird_300.png" height="100px" />
+        <h3>Build apps for any device</h3>
+        <span>Use the same code whether you’re developing for web, iOS, Android, or desktop. Hot push new features without app store approval or forcing users to download a new native app.</span>
+      </div>
+      
+    </div>
+    <div class="col-sm-4">
+      
+      <div id="items-right" class="items-object wow fadeIn" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">
+        <img src="/images/Triple_Flake_300.png" height="100px" />
+        <h3>Integrate technologies you already use</h3>
+        <span>Use popular frameworks and tools, right out-of-the-box. Focus on building features instead of wiring disparate components together yourself.</span>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</template>
+
+<template name="hello">
+  <button class="btn btn-primary">Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>
+
+<template name="header">
+  <div class="jumbotron" id=header>
+    <h1 style="color: whitesmoke">Welcome to Planit!</h1>
+    <button type="button" class="btn btn-default" id="dl-button">Download</button>
+    <button type="button" class="btn btn-default" style="background-color: transparent; color: whitesmoke">Share</button>
+  </div>
+</template>
+
+<template name="navbar">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Planit</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+  </nav>
+</template>
+  
